@@ -43,9 +43,20 @@ li{
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 
  /* ========= HEADER =========== */
 
+ .menu-mobile{
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
 
 .header {
     padding: 25px 0 0 0;
@@ -237,7 +248,7 @@ li{
 }
 
 .track__img {
-   margin: auto auto 90px;
+   margin: 60px auto 90px;
 }
 
 
@@ -518,25 +529,249 @@ li{
     z-index: 5;
 }
 
+
+
 /* Media */
 
-@media (max-width:  px) {
+@media (max-width: 1100px) {
+    .promo {
+       background-position: left center;
+    }
 
+    .menu-list{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: flex;
+        gap: 0 20px;
+    }
+
+    .logo-img {
+        width: 50px;
+    }
+    .nav {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 64px;
+    }
+    .subtitle {
+        font-size: 42px;
+    }
+    .subtitle span {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:  969px) {
+    .evo-white__inner::after{
+        display: none;
+    }
+}
+
+@media (max-width:  840px) {
+    .menu-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    .menu-btn span {
+        height: 3px;
+        background-color: #fff;
+        width: 100%;
+    }
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-mobile.menu--open{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #373737;
+        height: 100vh;
+        text-align: center;
+        padding-top: 140px;
+
+        z-index: 5;
+    }
+
+    .menu-link {
+        color:#fff;
+        display: block;
+        font-size: 3vh;
+        padding: 20px 0;
+    }
+
+    .logo {
+        z-index: 6;
+    }
+
+    .info{
+        margin-bottom: 40px;
+    }
+
+    .info__part-textbox{
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .info__part {
+        display: block;
+    }
+
+    .info__part-img{
+        width: 100%;
+        transform: rotateY(180deg);
+    }
+
+    .info__part--second .info__text,
+    .info__part--third .info__text{
+        max-width: 100%;
+    }
+
+    .info__table{
+        width: 100%;
+    }
+
+    .track__inner {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width:  768px) {
+    .blog__quote {
+        flex-direction: column;
+    }
+
+.blog__quote-box {
+    flex-basis: auto;
+}
+
+.blog__quote-img {
+    order: -1;
+}
+
+.blog__item-img{
+    width: 100%;
+}
+
+.footer__top {
+    display: block;
+}
+.blog {
+    margin-bottom: 40px;
+}
+.footer {
+    padding: 50px 0;
+}
+.blog__slider, .evo {
+    margin-bottom: 40px;
+}
+.evo-white__inner{
+    padding-top: 60px;
+}
+
+.evo-black__img {
+    margin-top: 130px;
+}
+
+.info__part {
+    padding-top: 50px;
+}
+
+}
+
+@media (max-width: 669px) {
+
+    .evo-black__info{
+        display: block;
+    }
+
+    .evo-black__title {
+        margin-bottom: 20px;
+    }
+    .evo-white__inner::before{
+        display: none;
+    }
+
+    .evo__descr-list{
+        display: block;
+        text-align: center;
+    }
+
+    .evo__descr-list div{
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .title {
+        font-size: 48px;
+    }
+    .subtitle {
+        font-size: 34px;
+    }
+    .subtitle span {
+        font-size: 26px;
+    }
+
+    .info__table td:nth-child(2){
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .evo-black__inner::after{
+        display: none;
+    }
+}
+
+@media (max-width:  480px) {
+    .footer__bottom{
+        display: block;
+        text-align: center;
+    }
+
+    .footer__logo {
+        padding: 20px 0;
+        display: block;
+    }
+
+    #map {
+        width: 100%;
+    }
+}
+
+@media (max-width:  340px) {
+    .title {
+        font-size: 42px;
+    }
+    .subtitle {
+        font-size: 30px;
+    }
+    .menu-link {
+        padding: 15px 0;
+    }
 }
 
 @media (max-width:  px) {
 
 }
 
-@media (max-width:  px) {
 
-}
 
-@media (max-width:  px) {
-
-}
-
-@media (max-width:  px) {
-
-}
 
